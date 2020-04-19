@@ -22,17 +22,72 @@ video {
   border-color: #660d1a
 }
 
+.btn-left {
+  margin: 16px auto;
+  display: block;
+  width: 100%;
+}
 .btn-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin: 16px auto;
+  display: block;
+  width: 100%;
 }
 
-.btn-left {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media (min-width: 576px) {
+  .btn-left {
+    margin: 16px auto;
+    display: block;
+    width: 100%;
+  }
+  .btn-right {
+    margin: 16px auto;
+    display: block;
+    width: 100%;
+  }
+ }
+
+@media (min-width: 768px) {
+  .btn-left {
+    margin: 16px auto;
+    display: block;
+    width: 72.5%;
+  }
+  .btn-right {
+    margin: 16px auto;
+    display: block;
+    width: 72.5%;
+  }
+ }
+
+@media (min-width: 992px) { 
+  .btn-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+  }
+  .btn-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+  }
 }
+
+@media (min-width: 1200px) { 
+  .btn-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+  }
+  .btn-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+  }
+ }
 
 
 /* CUSTOMIZE THE IMG

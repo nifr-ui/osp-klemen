@@ -1,1 +1,16 @@
-<h1> ADVICES </h1>
+<div class="container marketing">
+  <br>
+  <h1 class="mb-3 mt-4">Nasveti</h1>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <button class="btn btn-link nav-link active" id="expedia" ng-click="ac.setAdvice('expedia')">Expedia</button>
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-link nav-link" id="booking" ng-click="ac.setAdvice('booking')">Booking</a>
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-link nav-link" id="airbnb" ng-click="ac.setAdvice('airbnb')">Airbnb</button>
+    </li>
+  </ul>
+  <div class="mt-5 text-justify" ng-include="ac.displayAdvice"></div>
+</div>

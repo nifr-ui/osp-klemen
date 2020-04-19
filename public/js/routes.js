@@ -9,11 +9,13 @@ angular.module('appRoutes', ['ngRoute'])
       })
       .when('/services', {
         templateUrl: 'views/services.html',
-        controller: 'displayCtrl',
-        controllerAs: 'dc'
+        controller: 'serviceCtrl',
+        controllerAs: 'ac'
       })
       .when('/advice', { 
         templateUrl: 'views/advice.html',
+        controller: 'adviceCtrl',
+        controllerAs: 'ac'
       })
       .when('/contact', { 
         templateUrl: 'views/contact.html',
