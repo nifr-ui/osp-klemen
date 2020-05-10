@@ -6,6 +6,8 @@ angular.module('appRoutes', ['ngRoute'])
     $routeProvider
       .when('/', { 
         templateUrl: 'views/home.html',
+        controller: 'homeCtrl',
+        controllerAs: 'ac'
       })
       .when('/services', {
         templateUrl: 'views/services.html',
@@ -17,14 +19,10 @@ angular.module('appRoutes', ['ngRoute'])
         controller: 'adviceCtrl',
         controllerAs: 'ac'
       })
-      .when('/contact', { 
-        templateUrl: 'views/contact.html',
-      })
-      .when('/aboutUs', { 
-        templateUrl: 'views/aboutUs.html',
-      })
       .when('/comments', { 
         templateUrl: 'views/comments.html',
+        controller: 'commentsCtrl',
+        controllerAs: 'ac'
       })
       .otherwise({ redirectTo: '/' });
   }]);

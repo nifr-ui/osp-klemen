@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <base href="/"/>
+  <base href="/" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,7 +20,9 @@
 <body style="position:relative" ng-app="app">
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:#660d1a !important">
-      <img class="navbar-brand" src="img/logo-01.png" style="height:auto;width:100px;">
+      <a href="home" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <img class="navbar-brand" src="img/logo-01.png" style="height:auto;width:100px;">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,25 +30,23 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link btn btn-link" id="homeBtn" href="home">Domov</a>
+            <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="homeBtn"
+              href="home">Domov</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-link" id="servicesBtn" href="services">Storitve</a>
+            <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="servicesBtn"
+              href="services">Storitve</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-link" id="advicesBtn" href="advice">Nasveti</a>
+            <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="adviceBtn"
+              href="advice">Nasveti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-link" id="contactBtn" href="contact">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-link" id="aboutUsBtn" href="aboutUs">O nas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-link" id="commentsBtn" href="comments">Komentarji partnerjev</a>
+            <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="commentsBtn"
+              href="comments">Komentarji partnerjev</a>
           </li>
         </ul>
-        <div class="form-inline mt-2 mt-md-0 text-white">
+        <div class="mt-3 mt-md-0 text-white text-center">
           <i class="fas fa-mobile mr-2"></i>
           <span>
             +386 40 157 883
@@ -57,7 +57,7 @@
   </header>
 
   <main role="main" id="main" style="min-height: 90vh;">
-    <div ng-view="ng-view"></div>
+    <div ng-view="ng-view" autoscroll="true"></div>
   </main>
   <div style="margin-bottom:470px"></div>
 
@@ -78,20 +78,29 @@
           </div>
           <div class="mt-3">
             <i class="fas fa-envelope mr-2"></i>
-            ube.klemenb@gmail.com
+            osp.klemenb@gmail.com
           </div>
-          <div class="mt-3 mb-5">
+          <div class="mt-3">
             <i class="fas fa-mobile mr-2"></i>
             +386 40 157 883
           </div>
+          <div class="mt-3 mb-5">
+            <a href="https://www.facebook.com/OSP-Klemen-112764790419555/?ref=page_internal" target="blank"
+              class="text-white">
+              <i class="fab fa-facebook"></i>
+              <span class="ml-2">OSP-Klemen</span>
+            </a>
+          </div>
         </div>
         <div class="col-lg-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5867.843832514226!2d14.45312364332398!3d46.04604138968286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad2b3d709c3b5%3A0xa5ef818a50fabb5b!2sHofer!5e0!3m2!1ssl!2ssi!4v1580564797234!5m2!1ssl!2ssi" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5867.843832514226!2d14.45312364332398!3d46.04604138968286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ad2b3d709c3b5%3A0xa5ef818a50fabb5b!2sHofer!5e0!3m2!1ssl!2ssi!4v1580564797234!5m2!1ssl!2ssi"
+            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="text-center mt-2 mb-3 col-lg-12">
+          <div>&copy; 2020 Company, Inc.</div>
         </div>
       </div>
-    </div>
-    <div style="position:relative;bottom:0;left:0;color:#cccccc" class="text-center mt-3">
-      <p>&copy; 2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </div>
   </footer>
 
