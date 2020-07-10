@@ -13,6 +13,7 @@ angular.module('appControllers', [])
     const scope = this;
     scope.displayAdvice = './views/adviceContent/expedia.html';
     scope.setAdvice = (platform) => {
+      console.log(platform)
       scope.displayAdvice = `./views/adviceContent/${platform}.html`;
       $('.nav-tabs > .nav-item > .btn-link.active').removeClass('active');
       $(`#${platform}`).addClass('active');
