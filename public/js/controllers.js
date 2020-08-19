@@ -1,15 +1,15 @@
 angular.module('appControllers', [])
-  .controller('homeCtrl', function ($http) {
+  .controller('homeCtrl', function () {
     const scope = this;
     $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
     $('#homeBtn').addClass('active');
   })
-  .controller('serviceCtrl', function ($http) {
+  .controller('serviceCtrl', function () {
     const scope = this;
     $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
     $('#servicesBtn').addClass('active');
   })
-  .controller('adviceCtrl', function ($http) {
+  .controller('adviceCtrl', function () {
     const scope = this;
     scope.displayAdvice = './views/adviceContent/expedia.html';
     scope.setAdvice = (platform) => {
@@ -20,7 +20,7 @@ angular.module('appControllers', [])
     $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
     $('#adviceBtn').addClass('active');
   })
-  .controller('commentsCtrl', function ($http) {
+  .controller('commentsCtrl', function () {
     const scope = this;
     $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
     $('#commentsBtn').addClass('active');

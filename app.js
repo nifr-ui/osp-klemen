@@ -1,18 +1,30 @@
+const path = require('path')
 const compression = require('compression')
 const express = require('express')
 const helmet = require('helmet');
-const app = express()
+const app = express()/*,
+  DIST_DIR = __dirname,
+  HTML_FILE = path.join(DIST_DIR, 'index.html')*/
 app.use(compression())
 
-const port = 3001
+const port = process.env.PORT || 4000;
 const router = express.Router()
 const bodyParser= require('body-parser');
 
-
+//app.use(express.static(DIST_DIR))
 app.use(express.static(__dirname + '/public'))
 app.set('views', __dirname + '/public/views')
 app.use('/', router)
-//app.use(helmet());
+app.use(helmet.dnsPrefetchControl());
+app.use(helmet.expectCt());
+app.use(helmet.frameguard());
+app.use(helmet.hidePoweredBy());
+app.use(helmet.hsts());
+app.use(helmet.ieNoOpen());
+app.use(helmet.noSniff());
+app.use(helmet.permittedCrossDomainPolicies());
+app.use(helmet.referrerPolicy());
+app.use(helmet.xssFilter());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -20,8 +32,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/views/index.html')
 })
-
-
 app.get('*', function (req, res) {
   res.sendFile(__dirname + '/public/views/index.html')
 })
