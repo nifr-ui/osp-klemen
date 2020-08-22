@@ -1,10 +1,7 @@
-const path = require('path')
 const compression = require('compression')
 const express = require('express')
 const helmet = require('helmet');
-const app = express()/*,
-  DIST_DIR = __dirname,
-  HTML_FILE = path.join(DIST_DIR, 'index.html')*/
+const app = express()
 app.use(compression())
 
 const port = process.env.PORT || 4000;
