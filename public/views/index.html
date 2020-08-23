@@ -1,50 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sl">
-
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta description="Iščete celovito rešitev za oddajanje vaših nastanitev. Predstavljajte si, da lahko najdete vse odgovore na enem mestu. Lahko imate pasiven prihodek z oddajanjem vaših nepremičnin.">
-    <meta keywords="vodenje, oddajanje, nastanitve, svetovanje, mentorstvo, oglasi, prodaja">
-    <meta author="Nik Francelj & Larisa Nagode">
-    <base href="/" />
-    <link rel="icon" type="image/png" href="../img/logo-01.png"/>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      description="Iščete celovito rešitev za oddajanje vaših nastanitev. Predstavljajte si, da lahko najdete vse odgovore na enem mestu. Lahko imate pasiven prihodek z oddajanjem vaših nepremičnin."
+    />
+    <meta
+      keywords="vodenje, oddajanje, nastanitve, svetovanje, mentorstvo, oglasi, prodaja"
+    />
+    <meta author="Nik Francelj & Larisa Nagode" />
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <base href="/" />
+
+    <link rel="icon" type="image/png" href="../img/logo-01.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
     <title>OSP klemen</title>
   </head>
 
-  <body style="position:relative" ng-app="app">
+  <body ng-app="app">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="background-color:#660d1a !important">
-        <a href="home" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <img class="navbar-brand" src="img/logo-01.png" style="height:auto;width:100px;">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark theme-color"
+      >
+        <a
+          href="home"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <img class="navbar-brand logo-size" src="img/logo-01.png" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="homeBtn"
-                href="home">Domov</a>
+              <a
+                class="nav-link btn btn-link"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                id="homeBtn"
+                href="home"
+                >Domov</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="servicesBtn"
-                href="services">Storitve</a>
+              <a
+                class="nav-link btn btn-link"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                id="servicesBtn"
+                href="services"
+                >Storitve</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="adviceBtn"
-                href="advice">Nasveti</a>
+              <a
+                class="nav-link btn btn-link"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                id="adviceBtn"
+                href="advice"
+                >Nasveti</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-link" data-toggle="collapse" data-target=".navbar-collapse.show" id="commentsBtn"
-                href="comments">Komentarji partnerjev</a>
+              <a
+                class="nav-link btn btn-link"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                id="commentsBtn"
+                href="comments"
+                >Komentarji partnerjev</a
+              >
             </li>
           </ul>
           <div class="mt-3 mt-md-0 text-white text-center">
@@ -57,10 +107,10 @@
       </nav>
     </header>
 
-    <main role="main" id="main" style="min-height: 90vh;">
+    <main role="main" id="main">
       <div ng-view="ng-view" autoscroll="true"></div>
     </main>
-    <div style="margin-bottom:470px"></div>
+    <div class="space-after-main"></div>
 
     <!-- FOOTER -->
     <footer class="bg-dark">
@@ -85,8 +135,11 @@
               +386 40 157 883
             </div>
             <div class="mt-3 mb-5">
-              <a href="https://www.facebook.com/OSP-Klemen-112764790419555/?ref=page_internal" target="blank"
-                class="text-white">
+              <a
+                href="https://www.facebook.com/OSP-Klemen-112764790419555/?ref=page_internal"
+                target="blank"
+                class="text-white"
+              >
                 <i class="fab fa-facebook"></i>
                 <span class="ml-2">OSP-Klemen</span>
               </a>
@@ -98,12 +151,35 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/b5f7ab26e1.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.min.js" integrity="sha512-jiG+LwJB0bmXdn4byKzWH6whPpnLy1pnGA/p3VCXFLk4IJ/Ftfcb22katPTapt35Q6kwrlnRheK6UPOIdJhYTA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.0/angular-route.min.js" integrity="sha512-KgQeEw8J2b0mJH/09XwcsYPr0koz6wqhHR4Kpii/4Tjayshk4swTbyGpWRCPpQQlP/4kJEXGqBXsXgkL+wPTpw==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
+      integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b5f7ab26e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.min.js"
+      integrity="sha512-jiG+LwJB0bmXdn4byKzWH6whPpnLy1pnGA/p3VCXFLk4IJ/Ftfcb22katPTapt35Q6kwrlnRheK6UPOIdJhYTA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.0/angular-route.min.js"
+      integrity="sha512-KgQeEw8J2b0mJH/09XwcsYPr0koz6wqhHR4Kpii/4Tjayshk4swTbyGpWRCPpQQlP/4kJEXGqBXsXgkL+wPTpw=="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/ang.js"></script>
     <script src="js/routes.js"></script>
     <script src="js/controllers.js"></script>

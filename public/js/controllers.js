@@ -1,28 +1,28 @@
-angular.module('appControllers', [])
-  .controller('homeCtrl', function () {
+angular
+  .module("appControllers", [])
+  .controller("homeCtrl", function () {
     const scope = this;
-    $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
-    $('#homeBtn').addClass('active');
+    $(".navbar-nav > .nav-item >.nav-link.btn.btn-link").removeClass("active");
+    $("#homeBtn").addClass("active");
   })
-  .controller('serviceCtrl', function () {
+  .controller("serviceCtrl", function () {
     const scope = this;
-    $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
-    $('#servicesBtn').addClass('active');
+    $(".navbar-nav > .nav-item >.nav-link.btn.btn-link").removeClass("active");
+    $("#servicesBtn").addClass("active");
   })
-  .controller('adviceCtrl', function () {
+  .controller("adviceCtrl", function () {
     const scope = this;
-    scope.displayAdvice = './views/adviceContent/expedia.html';
+    scope.displayAdvice = "./views/adviceContent/expedia.html";
     scope.setAdvice = (platform) => {
       scope.displayAdvice = `./views/adviceContent/${platform}.html`;
-      $('.nav-tabs > .nav-item > .btn-link.active').removeClass('active');
-      $(`#${platform}`).addClass('active');
-    }
-    $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
-    $('#adviceBtn').addClass('active');
+      $(".nav-tabs > .nav-item > .btn-link.active").removeClass("active");
+      $(`#${platform}`).addClass("active");
+    };
+    $(".navbar-nav > .nav-item >.nav-link.btn.btn-link").removeClass("active");
+    $("#adviceBtn").addClass("active");
   })
-  .controller('commentsCtrl', function () {
+  .controller("commentsCtrl", function () {
     const scope = this;
-    $('.navbar-nav > .nav-item >.nav-link.btn.btn-link').removeClass('active');
-    $('#commentsBtn').addClass('active');
-  })
-  
+    $(".navbar-nav > .nav-item >.nav-link.btn.btn-link").removeClass("active");
+    $("#commentsBtn").addClass("active");
+  });

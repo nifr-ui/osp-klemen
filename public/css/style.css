@@ -7,6 +7,11 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
   font-family: 'Roboto Slab', serif;
+  position: relative;
+}
+
+main {
+  min-height: 90vh;
 }
 
 footer {
@@ -19,8 +24,17 @@ footer {
   max-height:470;
 }
 
+.space-after-main {
+  margin-bottom: 470px
+}
+
 .width-100 {
   width: 100%;
+}
+
+.logo-size {
+  width: 100px;
+  height: auto;
 }
 
 .height-100 {
@@ -130,7 +144,7 @@ video {
 -------------------------------------------------- */
 
 .theme-color {
-  background-color: #660d1a ;
+  background-color: #660d1a !important;
 }
 
 .presentation-xl {
