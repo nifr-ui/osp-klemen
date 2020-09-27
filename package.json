@@ -2,9 +2,9 @@
   "name": "osp-klemen",
   "version": "1.0.0",
   "description": "OSP Klemen web page",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node server.js"
   },
   "author": "Nik Francelj & Larisa Nagode",
   "license": "ISC",
